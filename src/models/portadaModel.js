@@ -29,8 +29,8 @@ portadaSchema.methods.setImageUrl = function (filename)
 {
     
       const {host, port, ruta} = appConfig
-   /*    this.url = `${host}:${port}/img/${filename}`  */
-   this.url=ruta;
+       this.url = `${ruta}/img/${filename}`  
+  
 
       // asignamos la fecha de subida de la imagen
       this.fecha=Date.now();
