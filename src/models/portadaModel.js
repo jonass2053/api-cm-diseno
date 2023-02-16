@@ -28,8 +28,9 @@ const portadaSchema = new mongoose.Schema(
 portadaSchema.methods.setImageUrl = function (filename)
 {
     
-      const {host, port} = appConfig
-      this.url = `${host}:${port}/img/${filename}` 
+      const {host, port, ruta} = appConfig
+   /*    this.url = `${host}:${port}/img/${filename}`  */
+   this.url=ruta;
 
       // asignamos la fecha de subida de la imagen
       this.fecha=Date.now();

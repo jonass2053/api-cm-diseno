@@ -3,6 +3,7 @@ const config= {
     {
         host : 'http://localhost',
         port : '3001',
+        ruta : 'https://web-production-eeb4.up.railway.app/'
 
     },
     dbConfig:
