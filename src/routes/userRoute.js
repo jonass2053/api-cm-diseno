@@ -139,7 +139,7 @@ route.post('/usuario/logout', auth,   async(req, res)=>
 
      try {
         
-        req.user.tokens= req.user.tokens.filter((token)=>{token.token !==req.token}) 
+        req.user.tokens= await req.user.tokens.filter((token)=>{token.token !==req.token}) 
         await req.user.save();
         res.status(200).send({'Mjs' : 'Sesion cerrada correctamente'})
     }   catch (error) {
